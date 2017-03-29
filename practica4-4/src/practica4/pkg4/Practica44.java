@@ -29,12 +29,12 @@ public class Practica44 {
             System.out.println("3");
 
             System.out.println("4");
-            System.out.println("5:");
+            System.out.println("5");
             System.out.println("6");
             System.out.println("7");
             System.out.println("8");
             System.out.println("9");
-            System.out.println("10");
+            System.out.println("10: Hicham.");
             System.out.println("11");
             System.out.println("12");
             System.out.println("13");
@@ -62,7 +62,9 @@ public class Practica44 {
                 case" 7":
                 case "8":
                 case" 9":
-                case "10":
+                case "10": 
+                    String nombre10= "Hicham";
+                    System.out.println("Mi nombre es: "+nombre10);
                 case "11":
                 case "12":
                 case "13": String nombre = "Sergio";System.out.println(nombre);break;
