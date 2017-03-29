@@ -50,7 +50,7 @@ public class Practica44 {
             switch (numero) {
                 case "1":
 
-                case "2":
+                case "2":System.out.println("Hola, soy Raúl");break;
 
                 case "3":
 
