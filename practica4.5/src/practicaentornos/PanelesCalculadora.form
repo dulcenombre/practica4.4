@@ -53,22 +53,22 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botonsalir2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonsalir" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="cajatres2" pref="100" max="32767" attributes="0"/>
-                      <Component id="cajauno2" max="32767" attributes="0"/>
-                      <Component id="cajados2" max="32767" attributes="0"/>
+                      <Component id="cajatres" pref="100" max="32767" attributes="0"/>
+                      <Component id="cajauno" max="32767" attributes="0"/>
+                      <Component id="cajados" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="botonsumar2" min="-2" max="-2" attributes="0"/>
-                      <Component id="botondividir2" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="botonlimpiar2" min="-2" max="-2" attributes="0"/>
-                      <Component id="botonrestar2" min="-2" max="-2" attributes="0"/>
-                      <Component id="botonmultiplicar2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonsumar" min="-2" max="-2" attributes="0"/>
+                      <Component id="botondividir" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonlimpiar" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonrestar" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonmultiplicar" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="65" max="32767" attributes="0"/>
               </Group>
@@ -82,31 +82,31 @@
                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="textouno2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cajauno2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cajauno" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="textodos2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cajados2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cajados" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="textotres2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cajatres2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cajatres" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botonsalir2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonsalir" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="botonsumar2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonsumar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botonrestar2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonrestar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botonmultiplicar2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonmultiplicar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botondividir2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botondividir" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botonlimpiar2" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonlimpiar" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="195" max="32767" attributes="0"/>
@@ -121,7 +121,7 @@
             <Property name="text" type="java.lang.String" value="Primer N&#xfa;mero:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="botonlimpiar2">
+        <Component class="javax.swing.JButton" name="botonlimpiar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Limpiar"/>
           </Properties>
@@ -129,9 +129,9 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonlimpiarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cajauno2">
+        <Component class="javax.swing.JTextField" name="cajauno">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cajauno2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cajaunoActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="textodos2">
@@ -139,16 +139,16 @@
             <Property name="text" type="java.lang.String" value="Segundo N&#xfa;mero:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="cajados2">
+        <Component class="javax.swing.JTextField" name="cajados">
         </Component>
         <Component class="javax.swing.JLabel" name="textotres2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Resultado:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="cajatres2">
+        <Component class="javax.swing.JTextField" name="cajatres">
         </Component>
-        <Component class="javax.swing.JButton" name="botonrestar2">
+        <Component class="javax.swing.JButton" name="botonrestar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Restar"/>
           </Properties>
@@ -156,7 +156,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonrestarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonsumar2">
+        <Component class="javax.swing.JButton" name="botonsumar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Sumar"/>
           </Properties>
@@ -164,7 +164,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonsumarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonmultiplicar2">
+        <Component class="javax.swing.JButton" name="botonmultiplicar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Multiplicar"/>
           </Properties>
@@ -172,7 +172,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmultiplicarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botondividir2">
+        <Component class="javax.swing.JButton" name="botondividir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Dividir"/>
           </Properties>
@@ -180,7 +180,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botondividirActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonsalir2">
+        <Component class="javax.swing.JButton" name="botonsalir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
@@ -226,18 +226,18 @@
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="botonmultiplicar" max="32767" attributes="0"/>
-                              <Component id="botonrestar" max="32767" attributes="0"/>
-                              <Component id="botonsumar" alignment="0" max="32767" attributes="0"/>
+                              <Component id="botonmultiplica" max="32767" attributes="0"/>
+                              <Component id="botonresta" max="32767" attributes="0"/>
+                              <Component id="botonsuma" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="botonlimpiar" min="-2" pref="79" max="-2" attributes="0"/>
+                          <Component id="botonlimpia" min="-2" pref="79" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="botoncerrar" min="-2" pref="73" max="-2" attributes="0"/>
+                          <Component id="botoncerra" min="-2" pref="73" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="botondividir" min="-2" pref="86" max="-2" attributes="0"/>
+                          <Component id="botondividi" min="-2" pref="86" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
@@ -260,23 +260,23 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                                       <Component id="numero2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="botonmultiplicar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="botonmultiplica" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtresultado" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="botonrestar" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="botonresta" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="botonsumar" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonsuma" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="botondividir" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="botoncerrar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="botonlimpiar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="botondividi" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="botoncerra" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonlimpia" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="197" max="32767" attributes="0"/>
               </Group>
@@ -284,52 +284,52 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="botonsumar">
+        <Component class="javax.swing.JButton" name="botonsuma">
           <Properties>
             <Property name="text" type="java.lang.String" value="Sumar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonsumarActionPerformed1"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonsumaActionPerformed1"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonrestar">
+        <Component class="javax.swing.JButton" name="botonresta">
           <Properties>
             <Property name="text" type="java.lang.String" value="Restar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonrestarActionPerformed1"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonrestaActionPerformed1"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonmultiplicar">
+        <Component class="javax.swing.JButton" name="botonmultiplica">
           <Properties>
             <Property name="text" type="java.lang.String" value="Multiplcar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmultiplicarActionPerformed1"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmultiplicaActionPerformed1"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botondividir">
+        <Component class="javax.swing.JButton" name="botondividi">
           <Properties>
             <Property name="text" type="java.lang.String" value="Dividir"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botondividirActionPerformed1"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botondividiActionPerformed1"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonlimpiar">
+        <Component class="javax.swing.JButton" name="botonlimpia">
           <Properties>
             <Property name="text" type="java.lang.String" value="Limpiar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonlimpiarActionPerformed1"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonlimpiaActionPerformed1"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botoncerrar">
+        <Component class="javax.swing.JButton" name="botoncerra">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cerrar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoncerrarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoncerraActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="numero2">
@@ -639,7 +639,7 @@
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="botonlimpiar1" linkSize="5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                  <Component id="botonsalir" linkSize="5" min="-2" pref="73" max="-2" attributes="0"/>
+                  <Component id="botonsalir3" linkSize="5" min="-2" pref="73" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -669,7 +669,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="botonsalir" linkSize="6" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="botonsalir3" linkSize="6" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="botonlimpiar1" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="46" max="32767" attributes="0"/>
@@ -686,12 +686,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonlimpiar1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonsalir">
+        <Component class="javax.swing.JButton" name="botonsalir3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonsalirActionPerformed1"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonsalir3ActionPerformed1"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="division">

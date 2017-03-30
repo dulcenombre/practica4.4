@@ -29,24 +29,24 @@ public class PanelesCalculadora extends javax.swing.JFrame {
 
         jpanel1 = new javax.swing.JPanel();
         textouno2 = new javax.swing.JLabel();
-        botonlimpiar2 = new javax.swing.JButton();
-        cajauno2 = new javax.swing.JTextField();
+        botonlimpiar = new javax.swing.JButton();
+        cajauno = new javax.swing.JTextField();
         textodos2 = new javax.swing.JLabel();
-        cajados2 = new javax.swing.JTextField();
+        cajados = new javax.swing.JTextField();
         textotres2 = new javax.swing.JLabel();
-        cajatres2 = new javax.swing.JTextField();
-        botonrestar2 = new javax.swing.JButton();
-        botonsumar2 = new javax.swing.JButton();
-        botonmultiplicar2 = new javax.swing.JButton();
-        botondividir2 = new javax.swing.JButton();
-        botonsalir2 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        botonsumar = new javax.swing.JButton();
+        cajatres = new javax.swing.JTextField();
         botonrestar = new javax.swing.JButton();
+        botonsumar = new javax.swing.JButton();
         botonmultiplicar = new javax.swing.JButton();
         botondividir = new javax.swing.JButton();
-        botonlimpiar = new javax.swing.JButton();
-        botoncerrar = new javax.swing.JButton();
+        botonsalir = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        botonsuma = new javax.swing.JButton();
+        botonresta = new javax.swing.JButton();
+        botonmultiplica = new javax.swing.JButton();
+        botondividi = new javax.swing.JButton();
+        botonlimpia = new javax.swing.JButton();
+        botoncerra = new javax.swing.JButton();
         numero2 = new javax.swing.JTextField();
         numero1 = new javax.swing.JTextField();
         txtresultado = new javax.swing.JTextField();
@@ -65,7 +65,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         botonlimpiar1 = new javax.swing.JButton();
-        botonsalir = new javax.swing.JButton();
+        botonsalir3 = new javax.swing.JButton();
         division = new javax.swing.JButton();
         sumar = new javax.swing.JButton();
         botonrestar1 = new javax.swing.JButton();
@@ -84,16 +84,16 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         textouno2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         textouno2.setText("Primer Número:");
 
-        botonlimpiar2.setText("Limpiar");
-        botonlimpiar2.addActionListener(new java.awt.event.ActionListener() {
+        botonlimpiar.setText("Limpiar");
+        botonlimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonlimpiarActionPerformed(evt);
             }
         });
 
-        cajauno2.addActionListener(new java.awt.event.ActionListener() {
+        cajauno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cajauno2ActionPerformed(evt);
+                cajaunoActionPerformed(evt);
             }
         });
 
@@ -101,41 +101,41 @@ public class PanelesCalculadora extends javax.swing.JFrame {
 
         textotres2.setText("Resultado:");
 
-        botonrestar2.setText("Restar");
-        botonrestar2.addActionListener(new java.awt.event.ActionListener() {
+        botonrestar.setText("Restar");
+        botonrestar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonrestarActionPerformed(evt);
             }
         });
 
-        botonsumar2.setText("Sumar");
-        botonsumar2.addActionListener(new java.awt.event.ActionListener() {
+        botonsumar.setText("Sumar");
+        botonsumar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonsumarActionPerformed(evt);
             }
         });
 
-        botonmultiplicar2.setText("Multiplicar");
-        botonmultiplicar2.addActionListener(new java.awt.event.ActionListener() {
+        botonmultiplicar.setText("Multiplicar");
+        botonmultiplicar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonmultiplicarActionPerformed(evt);
             }
         });
 
-        botondividir2.setText("Dividir");
-        botondividir2.addActionListener(new java.awt.event.ActionListener() {
+        botondividir.setText("Dividir");
+        botondividir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botondividirActionPerformed(evt);
             }
         });
 
-        botonsalir2.setText("Salir");
-        botonsalir2.addMouseListener(new java.awt.event.MouseAdapter() {
+        botonsalir.setText("Salir");
+        botonsalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 botonsalirMouseExited(evt);
             }
         });
-        botonsalir2.addActionListener(new java.awt.event.ActionListener() {
+        botonsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonsalirActionPerformed(evt);
             }
@@ -157,19 +157,19 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                         .addComponent(textotres2))
                     .addGroup(jpanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(botonsalir2)))
+                        .addComponent(botonsalir)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(cajatres2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                    .addComponent(cajauno2)
-                    .addComponent(cajados2))
+                    .addComponent(cajatres, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(cajauno)
+                    .addComponent(cajados))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonsumar2)
-                    .addComponent(botondividir2)
-                    .addComponent(botonlimpiar2)
-                    .addComponent(botonrestar2)
-                    .addComponent(botonmultiplicar2))
+                    .addComponent(botonsumar)
+                    .addComponent(botondividir)
+                    .addComponent(botonlimpiar)
+                    .addComponent(botonrestar)
+                    .addComponent(botonmultiplicar))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
         jpanel1Layout.setVerticalGroup(
@@ -180,27 +180,27 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                         .addGap(17, 17, 17)
                         .addGroup(jpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(textouno2)
-                            .addComponent(cajauno2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cajauno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(13, 13, 13)
                         .addGroup(jpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(textodos2)
-                            .addComponent(cajados2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cajados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(25, 25, 25)
                         .addGroup(jpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(textotres2)
-                            .addComponent(cajatres2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cajatres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botonsalir2))
+                        .addComponent(botonsalir))
                     .addGroup(jpanel1Layout.createSequentialGroup()
-                        .addComponent(botonsumar2)
+                        .addComponent(botonsumar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botonrestar2)
+                        .addComponent(botonrestar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botonmultiplicar2)
+                        .addComponent(botonmultiplicar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botondividir2)
+                        .addComponent(botondividir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botonlimpiar2)))
+                        .addComponent(botonlimpiar)))
                 .addGap(0, 195, Short.MAX_VALUE))
         );
 
@@ -208,45 +208,45 @@ public class PanelesCalculadora extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Marta"));
 
-        botonsumar.setText("Sumar");
-        botonsumar.addActionListener(new java.awt.event.ActionListener() {
+        botonsuma.setText("Sumar");
+        botonsuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonsumarActionPerformed1(evt);
+                botonsumaActionPerformed1(evt);
             }
         });
 
-        botonrestar.setText("Restar");
-        botonrestar.addActionListener(new java.awt.event.ActionListener() {
+        botonresta.setText("Restar");
+        botonresta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonrestarActionPerformed1(evt);
+                botonrestaActionPerformed1(evt);
             }
         });
 
-        botonmultiplicar.setText("Multiplcar");
-        botonmultiplicar.addActionListener(new java.awt.event.ActionListener() {
+        botonmultiplica.setText("Multiplcar");
+        botonmultiplica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonmultiplicarActionPerformed1(evt);
+                botonmultiplicaActionPerformed1(evt);
             }
         });
 
-        botondividir.setText("Dividir");
-        botondividir.addActionListener(new java.awt.event.ActionListener() {
+        botondividi.setText("Dividir");
+        botondividi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botondividirActionPerformed1(evt);
+                botondividiActionPerformed1(evt);
             }
         });
 
-        botonlimpiar.setText("Limpiar");
-        botonlimpiar.addActionListener(new java.awt.event.ActionListener() {
+        botonlimpia.setText("Limpiar");
+        botonlimpia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonlimpiarActionPerformed1(evt);
+                botonlimpiaActionPerformed1(evt);
             }
         });
 
-        botoncerrar.setText("Cerrar");
-        botoncerrar.addActionListener(new java.awt.event.ActionListener() {
+        botoncerra.setText("Cerrar");
+        botoncerra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoncerrarActionPerformed(evt);
+                botoncerraActionPerformed(evt);
             }
         });
 
@@ -288,16 +288,16 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(numero1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonmultiplicar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botonrestar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botonsumar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(botonmultiplica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botonresta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botonsuma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(botonlimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botonlimpia, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(botoncerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botoncerra, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(botondividir, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(botondividi, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(54, 54, 54))
         );
         jPanel2Layout.setVerticalGroup(
@@ -315,17 +315,17 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(numero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(botonmultiplicar))))
+                                    .addComponent(botonmultiplica))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtresultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botonrestar)))
-                    .addComponent(botonsumar))
+                            .addComponent(botonresta)))
+                    .addComponent(botonsuma))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botondividir)
-                    .addComponent(botoncerrar)
-                    .addComponent(botonlimpiar))
+                    .addComponent(botondividi)
+                    .addComponent(botoncerra)
+                    .addComponent(botonlimpia))
                 .addContainerGap(197, Short.MAX_VALUE))
         );
 
@@ -505,10 +505,10 @@ public class PanelesCalculadora extends javax.swing.JFrame {
             }
         });
 
-        botonsalir.setText("Salir");
-        botonsalir.addActionListener(new java.awt.event.ActionListener() {
+        botonsalir3.setText("Salir");
+        botonsalir3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonsalirActionPerformed1(evt);
+                botonsalir3ActionPerformed1(evt);
             }
         });
 
@@ -588,13 +588,13 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(botonlimpiar1)
                 .addGap(52, 52, 52)
-                .addComponent(botonsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonsalir3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(83, 83, 83))
         );
 
         jPanel14Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {resultado, texto2});
 
-        jPanel14Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botonlimpiar1, botonsalir});
+        jPanel14Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botonlimpiar1, botonsalir3});
 
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -618,14 +618,14 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                         .addComponent(sumar)))
                 .addGap(83, 83, 83)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonsalir3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botonlimpiar1))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
 
         jPanel14Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {resultado, texto2});
 
-        jPanel14Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {botonlimpiar1, botonsalir});
+        jPanel14Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {botonlimpiar1, botonsalir3});
 
         getContentPane().add(jPanel14);
 
@@ -671,33 +671,49 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_botonsalirMouseExited
 
     private void botondividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botondividirActionPerformed
-       double num1 = Double.parseDouble(numero1.getText());
-       double num2 = Double.parseDouble(numero2.getText());
-       txtresultado.setText(String.valueOf(num1/num2));
+       String suno=cajauno.getText();
+        int uno=Integer.parseInt(suno);
+        String sdos=cajados.getText();
+        int dos=Integer.parseInt(sdos);
+        int division=uno/dos;
+        String restado=String.valueOf(division);
+        cajatres.setText(restado);
     }//GEN-LAST:event_botondividirActionPerformed
 
     private void botonmultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonmultiplicarActionPerformed
-       double num1 = Double.parseDouble(numero1.getText());
-       double num2 = Double.parseDouble(numero2.getText());
-       txtresultado.setText(String.valueOf(num1*num2));
+        String suno=cajauno.getText();
+        int uno=Integer.parseInt(suno);
+        String sdos=cajados.getText();
+        int dos=Integer.parseInt(sdos);
+        int multiplo=uno*dos;
+        String restado=String.valueOf(multiplo);
+        cajatres.setText(restado);
     }//GEN-LAST:event_botonmultiplicarActionPerformed
 
     private void botonsumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonsumarActionPerformed
-       double num1 = Double.parseDouble(numero1.getText());
-       double num2 = Double.parseDouble(numero2.getText());
-       txtresultado.setText(String.valueOf(num1+num2));
+        String suno=cajauno.getText();
+        int uno=Integer.parseInt(suno);
+        String sdos=cajados.getText();
+        int dos=Integer.parseInt(sdos);
+        int suma=uno + dos;
+        String restado=String.valueOf(suma);
+        cajatres.setText(restado);
     }//GEN-LAST:event_botonsumarActionPerformed
 
     private void botonrestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonrestarActionPerformed
-       double num1 = Double.parseDouble(numero1.getText());
-       double num2 = Double.parseDouble(numero2.getText());
-       txtresultado.setText(String.valueOf(num1-num2));
+       String suno=cajauno.getText();
+        int uno=Integer.parseInt(suno);
+        String sdos=cajados.getText();
+        int dos=Integer.parseInt(sdos);
+        int resta=uno - dos;
+        String restado=String.valueOf(resta);
+        cajatres.setText(restado);
     }//GEN-LAST:event_botonrestarActionPerformed
 
     private void botonlimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonlimpiarActionPerformed
-       txtresultado.setText("");
-       numero1.setText("");
-       numero2.setText("");
+       cajauno.setText("");
+        cajados.setText("");
+        cajatres.setText("");
     }//GEN-LAST:event_botonlimpiarActionPerformed
 
     private void txtresultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtresultadoActionPerformed
@@ -708,43 +724,43 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         
     }//GEN-LAST:event_numero1ActionPerformed
 
-    private void botonsumarActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonsumarActionPerformed1
+    private void botonsumaActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonsumaActionPerformed1
        double num1 = Double.parseDouble(numero1.getText());
        double num2 = Double.parseDouble(numero2.getText());
        txtresultado.setText(String.valueOf(num1+num2));
-    }//GEN-LAST:event_botonsumarActionPerformed1
+    }//GEN-LAST:event_botonsumaActionPerformed1
 
-    private void botoncerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoncerrarActionPerformed
+    private void botoncerraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoncerraActionPerformed
          System.exit(0);
-    }//GEN-LAST:event_botoncerrarActionPerformed
+    }//GEN-LAST:event_botoncerraActionPerformed
 
-    private void botonlimpiarActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonlimpiarActionPerformed1
+    private void botonlimpiaActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonlimpiaActionPerformed1
         txtresultado.setText("");
         numero1.setText("");
         numero2.setText("");
-    }//GEN-LAST:event_botonlimpiarActionPerformed1
+    }//GEN-LAST:event_botonlimpiaActionPerformed1
 
-    private void botonmultiplicarActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonmultiplicarActionPerformed1
+    private void botonmultiplicaActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonmultiplicaActionPerformed1
         double num1 = Double.parseDouble(numero1.getText());
        double num2 = Double.parseDouble(numero2.getText());
        txtresultado.setText(String.valueOf(num1*num2));
-    }//GEN-LAST:event_botonmultiplicarActionPerformed1
+    }//GEN-LAST:event_botonmultiplicaActionPerformed1
 
-    private void botonrestarActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonrestarActionPerformed1
+    private void botonrestaActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonrestaActionPerformed1
         double num1 = Double.parseDouble(numero1.getText());
        double num2 = Double.parseDouble(numero2.getText());
        txtresultado.setText(String.valueOf(num1-num2));
-    }//GEN-LAST:event_botonrestarActionPerformed1
+    }//GEN-LAST:event_botonrestaActionPerformed1
 
-    private void botondividirActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botondividirActionPerformed1
+    private void botondividiActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botondividiActionPerformed1
        double num1 = Double.parseDouble(numero1.getText());
        double num2 = Double.parseDouble(numero2.getText());
        txtresultado.setText(String.valueOf(num1/num2));
-    }//GEN-LAST:event_botondividirActionPerformed1
+    }//GEN-LAST:event_botondividiActionPerformed1
 
-    private void cajauno2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cajauno2ActionPerformed
+    private void cajaunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cajaunoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cajauno2ActionPerformed
+    }//GEN-LAST:event_cajaunoActionPerformed
 
     private void botonlimpiar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonlimpiar1ActionPerformed
         texto1.setText("");
@@ -752,9 +768,9 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         resultado.setText("");
     }//GEN-LAST:event_botonlimpiar1ActionPerformed
 
-    private void botonsalirActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonsalirActionPerformed1
+    private void botonsalir3ActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonsalir3ActionPerformed1
         System.exit(0);
-    }//GEN-LAST:event_botonsalirActionPerformed1
+    }//GEN-LAST:event_botonsalir3ActionPerformed1
 
     private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
         int a= Integer.parseInt(texto1.getText());
@@ -837,24 +853,24 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botoncerrar;
+    private javax.swing.JButton botoncerra;
+    private javax.swing.JButton botondividi;
     private javax.swing.JButton botondividir;
-    private javax.swing.JButton botondividir2;
+    private javax.swing.JButton botonlimpia;
     private javax.swing.JButton botonlimpiar;
     private javax.swing.JButton botonlimpiar1;
-    private javax.swing.JButton botonlimpiar2;
+    private javax.swing.JButton botonmultiplica;
     private javax.swing.JButton botonmultiplicar;
-    private javax.swing.JButton botonmultiplicar2;
+    private javax.swing.JButton botonresta;
     private javax.swing.JButton botonrestar;
     private javax.swing.JButton botonrestar1;
-    private javax.swing.JButton botonrestar2;
     private javax.swing.JButton botonsalir;
-    private javax.swing.JButton botonsalir2;
+    private javax.swing.JButton botonsalir3;
+    private javax.swing.JButton botonsuma;
     private javax.swing.JButton botonsumar;
-    private javax.swing.JButton botonsumar2;
-    private javax.swing.JTextField cajados2;
-    private javax.swing.JTextField cajatres2;
-    private javax.swing.JTextField cajauno2;
+    private javax.swing.JTextField cajados;
+    private javax.swing.JTextField cajatres;
+    private javax.swing.JTextField cajauno;
     private javax.swing.JButton division;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
