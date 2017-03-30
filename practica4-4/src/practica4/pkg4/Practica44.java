@@ -45,7 +45,7 @@ public class Practica44 {
             System.out.println("otro numero:SALIR DEL MENU");
             System.out.println("Introduce un numero:");
             Scanner sc=new Scanner(System.in);
-           numero= sc.nextLine();
+            numero= sc.nextLine();
 
             switch (numero) {
                 case "1":
@@ -62,14 +62,13 @@ public class Practica44 {
                 case "12":
                 case "13": String nombre = "Sergio";System.out.println(nombre);break;
                 case "14":
-                case "15":
+                case "15": String nombre15 = "Jesus";System.out.println(nombre15);break;
                 case "16":
                 
                 default:
                     salir=true;
                     break;
             }
-
         } while (salir == false);
 
     }
