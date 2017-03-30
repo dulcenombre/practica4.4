@@ -48,7 +48,7 @@ public class Practica44 {
             numero= sc.nextLine();
 
             switch (numero) {
-                case "1":
+                case "1":String nombreuno ="Alejandro Bogas"; System.out.println(nombreuno);break;
                 case "2":String nombre1="Raul";System.out.println(nombre1);break;
                 case "3":String nombre3="Fran";System.out.println(nombre3);break;
                 case "4":String nombre4="marta";System.out.println(nombre4);break;
