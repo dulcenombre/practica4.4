@@ -34,7 +34,7 @@ public class Practica44 {
             System.out.println("7");
             System.out.println("8");
             System.out.println("9");
-            System.out.println("10: Hicham.");
+            System.out.println("10");
             System.out.println("11");
             System.out.println("12");
             System.out.println("13");
@@ -49,22 +49,15 @@ public class Practica44 {
 
             switch (numero) {
                 case "1":
-
                 case "2":String nombre1="Raul";System.out.println(nombre1);break;
-
                 case "3":
-
                 case "4":
-
                 case "5":
                 case "6":
-
                 case" 7":
                 case "8":
                 case" 9":
-                case "10": 
-                    String nombre10= "Hicham";
-                    System.out.println("Mi nombre es: "+nombre10);
+                case "10": String nombre10= "Hicham"; System.out.println(nombre10);break;    
                 case "11":
                 case "12":
                 case "13": String nombre = "Sergio";System.out.println(nombre);break;
