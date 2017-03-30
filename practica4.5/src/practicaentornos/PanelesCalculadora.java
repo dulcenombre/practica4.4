@@ -201,10 +201,25 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         });
 
         botonrestar.setText("Restar");
+        botonrestar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonrestarActionPerformed1(evt);
+            }
+        });
 
         botonmultiplicar.setText("Multiplcar");
+        botonmultiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonmultiplicarActionPerformed1(evt);
+            }
+        });
 
         botondividir.setText("Dividir");
+        botondividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botondividirActionPerformed1(evt);
+            }
+        });
 
         botonlimpiar.setText("Limpiar");
         botonlimpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -575,6 +590,24 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         numero1.setText("");
         numero2.setText("");
     }//GEN-LAST:event_botonlimpiarActionPerformed1
+
+    private void botonmultiplicarActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonmultiplicarActionPerformed1
+        double num1 = Double.parseDouble(numero1.getText());
+       double num2 = Double.parseDouble(numero2.getText());
+       txtresultado.setText(String.valueOf(num1*num2));
+    }//GEN-LAST:event_botonmultiplicarActionPerformed1
+
+    private void botonrestarActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonrestarActionPerformed1
+        double num1 = Double.parseDouble(numero1.getText());
+       double num2 = Double.parseDouble(numero2.getText());
+       txtresultado.setText(String.valueOf(num1-num2));
+    }//GEN-LAST:event_botonrestarActionPerformed1
+
+    private void botondividirActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botondividirActionPerformed1
+       double num1 = Double.parseDouble(numero1.getText());
+       double num2 = Double.parseDouble(numero2.getText());
+       txtresultado.setText(String.valueOf(num1/num2));
+    }//GEN-LAST:event_botondividirActionPerformed1
 
     /**
      * @param args the command line arguments

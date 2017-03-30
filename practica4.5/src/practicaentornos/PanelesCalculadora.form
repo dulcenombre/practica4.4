@@ -293,16 +293,25 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Restar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonrestarActionPerformed1"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="botonmultiplicar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Multiplcar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmultiplicarActionPerformed1"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="botondividir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Dividir"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botondividirActionPerformed1"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="botonlimpiar">
           <Properties>
