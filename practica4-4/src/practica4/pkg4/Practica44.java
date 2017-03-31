@@ -39,7 +39,7 @@ public class Practica44 {
             System.out.println("12");
             System.out.println("13: Sergio.");
             System.out.println("14");
-            System.out.println("15");
+            System.out.println("15: Jesús.");
             System.out.println("16");
 
             System.out.println("otro numero:SALIR DEL MENU");
