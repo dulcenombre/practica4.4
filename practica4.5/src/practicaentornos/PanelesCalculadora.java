@@ -53,7 +53,19 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        Panel_AlejandroVF = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        numero1_Alejandro = new javax.swing.JTextField();
+        numero2_Alejandro = new javax.swing.JTextField();
+        Resultado_Alejandro = new javax.swing.JTextField();
+        Sumar_Alejandro = new javax.swing.JButton();
+        Restar_Alejandro = new javax.swing.JButton();
+        Multiplicar_Alejandro = new javax.swing.JButton();
+        Dividir_Alejandro = new javax.swing.JButton();
+        Limpiar_Alejandro = new javax.swing.JButton();
+        Salir_Alejandro = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         Panel_Sergio = new javax.swing.JPanel();
         etiquetaPrimerNumero_sergio = new javax.swing.JLabel();
@@ -185,7 +197,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                     .addComponent(botondividir)
                     .addComponent(botonrestar)
                     .addComponent(botonmultiplicar))
-                .addContainerGap(149, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
         jpanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botondividir, botonlimpiar, botonmultiplicar, botonrestar, botonsalir, botonsumar});
@@ -349,7 +361,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,20 +370,118 @@ public class PanelesCalculadora extends javax.swing.JFrame {
 
         getContentPane().add(jPanel3);
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Alejandro"));
+        Panel_AlejandroVF.setBorder(javax.swing.BorderFactory.createTitledBorder("Alejandro"));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+        jLabel3.setText("Introducir número:");
+
+        jLabel4.setText("Introducir número:");
+
+        jLabel5.setText("Resultado:");
+
+        Sumar_Alejandro.setText("Sumar");
+        Sumar_Alejandro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Sumar_AlejandroActionPerformed(evt);
+            }
+        });
+
+        Restar_Alejandro.setText("Restar");
+        Restar_Alejandro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Restar_AlejandroActionPerformed(evt);
+            }
+        });
+
+        Multiplicar_Alejandro.setText("Multiplicar");
+        Multiplicar_Alejandro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Multiplicar_AlejandroActionPerformed(evt);
+            }
+        });
+
+        Dividir_Alejandro.setText("Dividir");
+        Dividir_Alejandro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Dividir_AlejandroActionPerformed(evt);
+            }
+        });
+
+        Limpiar_Alejandro.setText("Limpiar");
+        Limpiar_Alejandro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Limpiar_AlejandroActionPerformed(evt);
+            }
+        });
+
+        Salir_Alejandro.setText("Salir");
+        Salir_Alejandro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Salir_AlejandroActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_AlejandroVFLayout = new javax.swing.GroupLayout(Panel_AlejandroVF);
+        Panel_AlejandroVF.setLayout(Panel_AlejandroVFLayout);
+        Panel_AlejandroVFLayout.setHorizontalGroup(
+            Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_AlejandroVFLayout.createSequentialGroup()
+                .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel_AlejandroVFLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(numero2_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(numero1_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Resultado_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(Panel_AlejandroVFLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(Limpiar_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Salir_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Restar_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Sumar_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Multiplicar_Alejandro)
+                    .addComponent(Dividir_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(157, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 339, Short.MAX_VALUE)
+        Panel_AlejandroVFLayout.setVerticalGroup(
+            Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_AlejandroVFLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Sumar_Alejandro)
+                    .addComponent(numero1_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel_AlejandroVFLayout.createSequentialGroup()
+                        .addComponent(Restar_Alejandro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Multiplicar_Alejandro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Dividir_Alejandro))
+                    .addGroup(Panel_AlejandroVFLayout.createSequentialGroup()
+                        .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(numero2_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Resultado_Alejandro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Panel_AlejandroVFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Limpiar_Alejandro)
+                            .addComponent(Salir_Alejandro))))
+                .addContainerGap(181, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel4);
+        getContentPane().add(Panel_AlejandroVF);
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Fran"));
 
@@ -379,7 +489,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -477,7 +587,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                         .addComponent(suma_sergio)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(resta_sergio)))
-                .addContainerGap(182, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         Panel_SergioLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {num1_sergio, num2_sergio});
@@ -517,7 +627,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -532,7 +642,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -547,7 +657,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -562,7 +672,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -577,7 +687,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -592,7 +702,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -607,7 +717,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -697,7 +807,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                         .addComponent(sumar, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
                         .addComponent(botonrestar1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -755,7 +865,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -770,7 +880,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 474, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1007,6 +1117,40 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         num1_sergio.setText(num1_sergio.getText());
     }//GEN-LAST:event_num1_sergioActionPerformed
 
+    private void Sumar_AlejandroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sumar_AlejandroActionPerformed
+       double num1 = Double.parseDouble(numero1_Alejandro.getText());
+       double num2 = Double.parseDouble(numero2_Alejandro.getText());
+       Resultado_Alejandro.setText(String.valueOf(num1+num2));
+    }//GEN-LAST:event_Sumar_AlejandroActionPerformed
+
+    private void Restar_AlejandroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Restar_AlejandroActionPerformed
+       double num1 = Double.parseDouble(numero1_Alejandro.getText());
+       double num2 = Double.parseDouble(numero2_Alejandro.getText());
+       Resultado_Alejandro.setText(String.valueOf(num1-num2));
+    }//GEN-LAST:event_Restar_AlejandroActionPerformed
+
+    private void Multiplicar_AlejandroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Multiplicar_AlejandroActionPerformed
+       double num1 = Double.parseDouble(numero1_Alejandro.getText());
+       double num2 = Double.parseDouble(numero2_Alejandro.getText());
+       Resultado_Alejandro.setText(String.valueOf(num1*num2));
+    }//GEN-LAST:event_Multiplicar_AlejandroActionPerformed
+
+    private void Dividir_AlejandroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Dividir_AlejandroActionPerformed
+       double num1 = Double.parseDouble(numero1_Alejandro.getText());
+       double num2 = Double.parseDouble(numero2_Alejandro.getText());
+       Resultado_Alejandro.setText(String.valueOf(num1/num2));
+    }//GEN-LAST:event_Dividir_AlejandroActionPerformed
+
+    private void Limpiar_AlejandroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Limpiar_AlejandroActionPerformed
+        numero1_Alejandro.setText("");
+        numero2_Alejandro.setText("");
+        Resultado_Alejandro.setText("");
+    }//GEN-LAST:event_Limpiar_AlejandroActionPerformed
+
+    private void Salir_AlejandroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salir_AlejandroActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_Salir_AlejandroActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1043,7 +1187,15 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Dividir_Alejandro;
+    private javax.swing.JButton Limpiar_Alejandro;
+    private javax.swing.JButton Multiplicar_Alejandro;
+    private javax.swing.JPanel Panel_AlejandroVF;
     private javax.swing.JPanel Panel_Sergio;
+    private javax.swing.JButton Restar_Alejandro;
+    private javax.swing.JTextField Resultado_Alejandro;
+    private javax.swing.JButton Salir_Alejandro;
+    private javax.swing.JButton Sumar_Alejandro;
     private javax.swing.JButton botoncerra;
     private javax.swing.JButton botondividi;
     private javax.swing.JButton botondividir;
@@ -1069,6 +1221,9 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     private javax.swing.JLabel etiquetaSegundoNumero_sergio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -1078,7 +1233,6 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -1090,7 +1244,9 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     private javax.swing.JTextField num1_sergio;
     private javax.swing.JTextField num2_sergio;
     private javax.swing.JTextField numero1;
+    private javax.swing.JTextField numero1_Alejandro;
     private javax.swing.JTextField numero2;
+    private javax.swing.JTextField numero2_Alejandro;
     private javax.swing.JTextField res_sergio;
     private javax.swing.JButton resta_sergio;
     private javax.swing.JTextField resultado;
