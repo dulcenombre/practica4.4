@@ -26,7 +26,7 @@ public class Practica44 {
             System.out.println("*****");
             System.out.println("1");
             System.out.println("2");
-            System.out.println("3: Francisco");
+            System.out.println("3: Francisco.");
 
             System.out.println("4");
             System.out.println("5: Alejandro");
