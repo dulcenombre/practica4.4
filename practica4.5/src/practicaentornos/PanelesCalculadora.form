@@ -436,9 +436,9 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="etiquetaPrimerNumero" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="etiquetaSegundoNumero" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="etiquetaResusltado" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="etiquetaPrimerNumero_sergio" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="etiquetaSegundoNumero_sergio" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="etiquetaResultado_sergio" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -471,7 +471,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="etiquetaPrimerNumero" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="etiquetaPrimerNumero_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="num1_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="suma_sergio" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="resta_sergio" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -481,11 +481,11 @@
                       <Component id="num2_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="multiplica_sergio" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="dividir_sergio" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="etiquetaSegundoNumero" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="etiquetaSegundoNumero_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="etiquetaResusltado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="etiquetaResultado_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="res_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="limpia_sergio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -495,17 +495,17 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="etiquetaPrimerNumero">
+        <Component class="javax.swing.JLabel" name="etiquetaPrimerNumero_sergio">
           <Properties>
             <Property name="text" type="java.lang.String" value="OPERADOR 1:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="etiquetaSegundoNumero">
+        <Component class="javax.swing.JLabel" name="etiquetaSegundoNumero_sergio">
           <Properties>
             <Property name="text" type="java.lang.String" value="OPERADOR 2: "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="etiquetaResusltado">
+        <Component class="javax.swing.JLabel" name="etiquetaResultado_sergio">
           <Properties>
             <Property name="text" type="java.lang.String" value="RESUALTADO: "/>
           </Properties>

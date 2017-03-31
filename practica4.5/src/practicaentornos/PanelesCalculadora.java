@@ -56,9 +56,9 @@ public class PanelesCalculadora extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         Panel_Sergio = new javax.swing.JPanel();
-        etiquetaPrimerNumero = new javax.swing.JLabel();
-        etiquetaSegundoNumero = new javax.swing.JLabel();
-        etiquetaResusltado = new javax.swing.JLabel();
+        etiquetaPrimerNumero_sergio = new javax.swing.JLabel();
+        etiquetaSegundoNumero_sergio = new javax.swing.JLabel();
+        etiquetaResultado_sergio = new javax.swing.JLabel();
         num1_sergio = new javax.swing.JTextField();
         num2_sergio = new javax.swing.JTextField();
         res_sergio = new javax.swing.JTextField();
@@ -390,11 +390,11 @@ public class PanelesCalculadora extends javax.swing.JFrame {
 
         Panel_Sergio.setBorder(javax.swing.BorderFactory.createTitledBorder("Sergio"));
 
-        etiquetaPrimerNumero.setText("OPERADOR 1:");
+        etiquetaPrimerNumero_sergio.setText("OPERADOR 1:");
 
-        etiquetaSegundoNumero.setText("OPERADOR 2: ");
+        etiquetaSegundoNumero_sergio.setText("OPERADOR 2: ");
 
-        etiquetaResusltado.setText("RESUALTADO: ");
+        etiquetaResultado_sergio.setText("RESUALTADO: ");
 
         num1_sergio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -456,9 +456,9 @@ public class PanelesCalculadora extends javax.swing.JFrame {
             .addGroup(Panel_SergioLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(Panel_SergioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(etiquetaPrimerNumero)
-                    .addComponent(etiquetaSegundoNumero)
-                    .addComponent(etiquetaResusltado))
+                    .addComponent(etiquetaPrimerNumero_sergio)
+                    .addComponent(etiquetaSegundoNumero_sergio)
+                    .addComponent(etiquetaResultado_sergio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Panel_SergioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(Panel_SergioLayout.createSequentialGroup()
@@ -489,7 +489,7 @@ public class PanelesCalculadora extends javax.swing.JFrame {
             .addGroup(Panel_SergioLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(Panel_SergioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(etiquetaPrimerNumero)
+                    .addComponent(etiquetaPrimerNumero_sergio)
                     .addComponent(num1_sergio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(suma_sergio)
                     .addComponent(resta_sergio))
@@ -498,10 +498,10 @@ public class PanelesCalculadora extends javax.swing.JFrame {
                     .addComponent(num2_sergio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(multiplica_sergio)
                     .addComponent(dividir_sergio)
-                    .addComponent(etiquetaSegundoNumero))
+                    .addComponent(etiquetaSegundoNumero_sergio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Panel_SergioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(etiquetaResusltado)
+                    .addComponent(etiquetaResultado_sergio)
                     .addComponent(res_sergio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(limpia_sergio))
                 .addContainerGap(214, Short.MAX_VALUE))
@@ -1064,9 +1064,9 @@ public class PanelesCalculadora extends javax.swing.JFrame {
     private javax.swing.JTextField cajauno;
     private javax.swing.JButton dividir_sergio;
     private javax.swing.JButton division;
-    private javax.swing.JLabel etiquetaPrimerNumero;
-    private javax.swing.JLabel etiquetaResusltado;
-    private javax.swing.JLabel etiquetaSegundoNumero;
+    private javax.swing.JLabel etiquetaPrimerNumero_sergio;
+    private javax.swing.JLabel etiquetaResultado_sergio;
+    private javax.swing.JLabel etiquetaSegundoNumero_sergio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel10;
