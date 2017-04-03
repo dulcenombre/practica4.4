@@ -30,7 +30,7 @@ public class Practica44 {
             System.out.println("4");
             System.out.println("5: Alejandro");
             System.out.println("6: pedro.");
-            System.out.println("7");
+            System.out.println("7: Jesús García");
             System.out.println("8");
             System.out.println("9");
             System.out.println("10: Hicham.");
