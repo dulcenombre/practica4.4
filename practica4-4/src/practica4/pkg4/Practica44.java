@@ -39,7 +39,7 @@ public class Practica44 {
             System.out.println("13: Sergio.");
             System.out.println("14");
             System.out.println("15: Jesús.");
-            System.out.println("16");
+            System.out.println("16: Jorge");
             System.out.println("otro numero:SALIR DEL MENU");
             System.out.println("Introduce un numero:");
             Scanner sc=new Scanner(System.in);
@@ -61,7 +61,7 @@ public class Practica44 {
                 case "13": String nombre = "Sergio";System.out.println(nombre);break;
                 case "14":
                 case "15": String nombre15 = "Jesus";System.out.println(nombre15);break;
-                case "16":
+                case "16": String nombre16 = "Jorge";System.out.println(nombre16);break;
                 
                 default:
                     salir=true;
