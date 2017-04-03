@@ -57,7 +57,7 @@ public class Practica44 {
                 case "9":
                 case "10": String nombre10= "Hicham"; System.out.println(nombre10);break;    
                 case "11":
-                case "12":
+                case "12":String nombre12="Raquel"; System.out.println(nombre12);break;
                 case "13": String nombre = "Sergio";System.out.println(nombre);break;
                 case "14":
                 case "15": String nombre15 = "Jesus";System.out.println(nombre15);break;
