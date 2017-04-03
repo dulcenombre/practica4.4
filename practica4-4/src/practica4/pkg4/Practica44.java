@@ -25,9 +25,8 @@ public class Practica44 {
             System.out.println("MENU:");
             System.out.println("*****");
             System.out.println("1");
-            System.out.println("2");
+            System.out.println("2: Raul");
             System.out.println("3: Francisco.");
-
             System.out.println("4");
             System.out.println("5: Alejandro");
             System.out.println("6");
@@ -41,7 +40,6 @@ public class Practica44 {
             System.out.println("14");
             System.out.println("15: Jesús.");
             System.out.println("16");
-
             System.out.println("otro numero:SALIR DEL MENU");
             System.out.println("Introduce un numero:");
             Scanner sc=new Scanner(System.in);
